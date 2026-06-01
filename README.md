@@ -1,4 +1,4 @@
-# hrc - Homelab Research Computing
+# HRC - Homelab Research Computing
 
 Ambiente de laboratório focado em computação científica e infraestrutura como código.
 
