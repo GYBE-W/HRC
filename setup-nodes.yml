@@ -1,0 +1,24 @@
+---
+- name: Configurar e Atualizar os Nós Linux
+  hosts: nodes
+  become: true
+  tasks:
+
+    - name: Ativar o repositório EPEL (Extra Packages for Enterprise Linux)
+      dnf:
+        name: epel-release
+        state: present
+
+    - name: Garantir que os pacotes essenciais estão instalados
+      dnf:
+        name:
+          - vim
+          - wget
+          - curl
+          - htop
+        state: present
+
+    - name: Atualizar todos os pacotes do sistema para a versão mais recente
+      dnf:
+        name: "*"
+        state: latest

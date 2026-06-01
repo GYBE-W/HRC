@@ -1,0 +1,8 @@
+# Ignorar chaves e ficheiros sensíveis
+*.pem
+*.key
+id_ed25519
+.env
+
+# Ignorar ficheiros temporários do Mac
+.DS_Store
